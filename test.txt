@@ -1,0 +1,58 @@
+using System;
+
+namespace Day_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            static void Main(string[] args)
+            {
+                while (true)
+                {
+                    Console.Write("Enter a number 1: ");
+                    double num1 = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Enter a number 2: ");
+                    double num2 = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Enter the operator : ");
+                    string op = Console.ReadLine();
+
+
+                    Double result = 0.0;
+                    Boolean Flag = true;
+
+                    if (op == "+")
+                    {
+                        result = num1 + num2;
+                    }
+                    else if (op == "-")
+                    {
+                        result = num1 - num2;
+                    }
+                    else if (op == "/")
+                    {
+                        result = num1 / num2;
+                    }
+                    else if (op == "*")
+                    {
+                        result = num1 * num2;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid operator!");
+                        Flag = false;
+                    }
+
+                    if (Flag)
+                    {
+                        Console.WriteLine($"Result: {result}");
+                    }
+
+
+                }
+            }
+        }
+    }
+}
